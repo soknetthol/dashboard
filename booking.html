@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form> 
+    <form method="get"> 
     
         <table align="center">
             <caption><h2>Creat Booking</h2></caption>
@@ -22,7 +22,38 @@
                 <td><label>Grender</label></td>
                 <td><input type="radio" name="texgrender" value="Female">Female<input type="radio" name="texgrender" value="Male">Male</td>
             </tr>
+             
+            <tr>
+                <td><lable>Check in Date:</lable></td>
+                <td><input type="date" name="datecheckin"></td>
+               
+            </tr>
              <tr>
+                <td><lable>Total Day: </lable></td>
+                <td><input type="number" name="txtTotalday" min="1"></td>
+              
+            </tr>
+             <tr>
+                <td><lble>Room number:</lble></td>
+                <td>
+                    <select name="room" multiple="">
+                        <option>101</option>
+                        <option>102</option>
+                        <option>103</option>
+                        <option>105</option>
+                        <option>106</option>
+                        <option>107</option>
+                        <option>108</option>
+                        <option>109</option>
+                        <option>110</option>
+                        <option>111</option>
+                        <option>112</option>
+
+                    </select>
+                </td>
+             
+            </tr>
+            <tr>
                 <td> </td>
                 <td><input type="submit"></td>
             </tr>
