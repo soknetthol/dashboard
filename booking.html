@@ -7,61 +7,66 @@
 </head>
 <body>
     <form method="get"> 
-    
-        <table align="center">
-            <caption><h2>Creat Booking</h2></caption>
+        <fieldset>
+          <table align="center" cellpadding="10">
+            <caption><h2>Create Booking</h2></caption>
             <tr>
-                <td>  <label>CustomerName</label></td>
-                <td> <input type="text" name="txtcusname" ></td>
+                <td><label>Customer Name:</label></td>
+                <td><input type="text" name="txtCusname"></td>
             </tr>
-             <tr>
+            <tr>
                 <td><label>Tel:</label></td>
-                <td><input type="text" name="txttel"  ></td>
+                <td><input type="text" name="txtTel"></td>
             </tr>
-             <tr>
-                <td><label>Grender</label></td>
-                <td><input type="radio" name="texgrender" value="Female">Female<input type="radio" name="texgrender" value="Male">Male</td>
-            </tr>
-             
             <tr>
-                <td><lable>Check in Date:</lable></td>
-                <td><input type="date" name="datecheckin"></td>
-               
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="txtGender" Value="Male">Male
+        <input type="radio" name="txtGender" Value="Female">Female</td>
             </tr>
-             <tr>
-                <td><lable>Total Day: </lable></td>
-                <td><input type="number" name="txtTotalday" min="1"></td>
-              
+            <tr>
+                <td><label>Check In Date:</label></td>
+                <td><input type="date" name="dateCheckIn"></td>
             </tr>
-             <tr>
-                <td><lble>Room number:</lble></td>
+            <tr>
+                <td><label>Total day:</label></td>
+                <td><input type="number" name="txtTotalDay" min="1"></td>
+            </tr>
+            <tr>
+                <td><label>Room Number:</label></td>
                 <td>
-                    <select name="room" multiple="">
-                        <option>101</option>
-                        <option>102</option>
-                        <option>103</option>
-                        <option>105</option>
-                        <option>106</option>
-                        <option>107</option>
-                        <option>108</option>
-                        <option>109</option>
-                        <option>110</option>
-                        <option>111</option>
-                        <option>112</option>
-
+                    <select name="Rnum">
+                        <optgroup label="single room">
+                    <option>101</option>
+                    <option>102</option>
+                    <option>103</option>
+                        </optgroup>
+                        <optgroup label="Double room">
+                    <option>201</option>
+                    <option>202</option>
+                    </optgroup>
+                        <optgroup label="family room">
+                    <option>203</option>
+                    <option>301</option>
+                        </optgroup>
+                        <optgroup label="VIP room">
+                    <option>302</option>
+                    <option>303</option>
+                        </optgroup>
                     </select>
-                </td>
-             
+            </td>
             </tr>
             <tr>
-                <td> </td>
-                <td><input type="submit"></td>
+                <td><label>Note:</label></td>
+                <td><textarea name="txtNote" rows="5" cols="40" placeholder="Type here..."></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="create">
+                <input type="reset" value="clear"></td>
             </tr>
         </table>
+    </fieldset>
 
-      
-        
-        
        
         
     </form>
