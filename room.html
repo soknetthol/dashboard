@@ -7,15 +7,15 @@
 </head>
 <body>
     <form>
+         <caption><h2>Add Room</h2></caption>
         <table align="center">
-            <caption><h2>Add Room</h2></caption>
         </table>
         <tr>
             <td><label>Room</label></td>
             <td><input type="number" name="txtRnum" min="1"></td>
         </tr>
-           <tr>
-            <td><label>Room Type</label></td>
+        <br><br>
+        <td><label>Room Type</label></td>
             <td>
                 <select>
                     <option>Single Room</option>
@@ -25,10 +25,12 @@
                 </select>
             </td>
         </tr>
-           <tr>
+        <br><br>
+        <tr>
             <td><label>Price Room</label></td>
             <td><input type="number" name="" min="30"></td>
         </tr>
+        <br><br>
            <tr>
             <td></td>
             <td></td>
@@ -41,6 +43,11 @@
             </select></td>
         </tr>
     </form>
-    
+    <style>
+        
+        form{
+            align-items: center;
+        }
+    </style>
 </body>
 </html>
