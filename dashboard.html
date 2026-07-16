@@ -10,6 +10,7 @@
 </head>
 <body>
     <style>
+      
         h1{
             color: rgb(121, 18, 7);
             font-size: 23px;}
@@ -20,19 +21,98 @@
             box-shadow: 2px 1px 3px gray;
             display: inline-block;
         }
+        i{
+            color: rgb(226, 196, 27);
+            text-shadow: 2px 2px gray;
+            text-decoration :none;;
+        }
+        span i{
+            margin-left: 25px;
+        }
+        span div{
+            font-family: Georgia;
+            font-size: 18pt;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .caption{
+            
+            font-weight: bold;
+            
+            text-decoration: underline;
+            margin-bottom:10px;
+        }
+        .first-row{
+            background-color: black;
+            color:gold;
+        }
+        
+        td{
+            padding:15px;
+        }
+        table{
+            border:2px solid gold;
+            box-shadow:1px 2px 1px gray;
+            background-color:whitesmoke;
+        }
+        .checkin i{
+            color: rgb(33, 188, 77) !important;
+        }
+        .pending i{
+            color:orange;
+        }
+        .checkout i{
+            color:rgb(33, 188, 77);
+        }
     </style>
-<h2>Administantion</h2><i class="fa-solid fa-gear">
+       <h2> <i class="fa-solid fa-gear"></i>Administantion</h2>
     </i>
-    <div>
-        <span>
-            total Booking 
+    
+     <span>
+            Total Booking<i class="fa-solid fa-bed"></i>
+            <div>13</div>
         </span>
         <span>
-            Availble Room
+            Available Rooms<i class="fa-solid fa-key"></i>
+             <div>24</div>
         </span>
         <span>
-            Daily Revenue
+            Daily Revenue<i class="fa-solid fa-database"></i>
+             <div>$2000</div>
         </span>
-    </div>
+        <br>
+        <div class="caption">
+         
+         <h2><i class="fa-solid fa-clock-rotate-left"></i>Recent Cheack-Ins</h2>
+        </div>
+        <table width="100%" rules="rows" frame="box">
+            <div>
+                <tr class="first-row">
+                        
+                        <td><i class="fa-solid fa-door-closed"></i>Guest Name</td>
+                        
+                        <td><i class="fa-solid fa-user"></i>Room</td>
+                        <td>Status</td>
+                </tr>
+           </div>
+           <tr class="">
+                <td>Thol soknet</td>
+                <td>suite 123</td>
+                <td class="checkin"><i class="fa-solid fa-circle"></i>Check IN</td>
+           </tr>
+           <tr>
+                <td>Run Sokleab</td>
+                <td>suite 34</td>
+                <td class="pending"><i class="fa-solid fa-circle"></i>Pending</td>
+           </tr>
+           <tr>
+                <td>Pov titi</td>
+                <td>suite 45</td>
+                <td class="checkout"><i class="fa-solid fa-circle"></i>Check Out</td>
+           </tr>
+    
+
+
+        </table>
 </body>
 </html>
